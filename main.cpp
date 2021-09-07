@@ -10,16 +10,20 @@ public:
     string name;
     string location;
     int age;
+    User(string aname, string alocation, int cage){
+        name = aname;
+        location = alocation;
+        age = cage;
+    };
 };
 
 int main()
 {
     sayHi();
     cout << "Hello world!" << endl;
-    User admin;
-     admin.name="warren";
-     admin.age = 20;
+    User voter("warren","kisumu", 24);
 
-    cout <<admin.name;
+    cout <<voter.name;
+
     return 0;
 }
